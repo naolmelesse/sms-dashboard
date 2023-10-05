@@ -8,7 +8,8 @@ import Image from "next/image";
 const Nav = () => {
 
     return(
-        <nav className="flex items-center sticky py-5 px-10 justify-between">
+        <div className="fixed w-full bg-[#fff] ">
+        <nav className="flex items-center py-2 px-10 justify-between">
             <div className="flex w-1/3 justify-between">
                 <Image
                     src="/logo.png"
@@ -28,6 +29,7 @@ const Nav = () => {
             <UserProfile/>
             </div>
         </nav>
+        </div>
     )
 }
 

@@ -10,7 +10,7 @@ const  Home = () => {
   return (
     <main className="flex">
       <SideNav tabs={tabs} />
-      <div className="flex-grow max-h-4/5">
+      <div className="flex-grow max-w-[85vw] ml-[15vw]">
         <AdminDashboard/>
       </div>
     </main>

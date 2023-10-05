@@ -21,7 +21,7 @@ interface SideNavigationProps {
 const SideNav : React.FC<SideNavigationProps> = ({ tabs }) => {
 
   return (
-    <nav className="text-md font-normal w-[15vw]  overflow-y-auto">
+    <nav className="text-md font-normal w-[15vw] max-h-[90vh] fixed bg-[#fff] mt-[5%] pb-5 overflow-y-auto">
       <div className="pt-6 flex flex-col">
         {tabs.map((tab) => (
             tab.subTabs ? 
