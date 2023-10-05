@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from "next/link";
 import TabWithSubTabs from './tab-menu';
-
+import Image from "next/image";
 
 interface subTab {
   label: string;
@@ -21,8 +21,7 @@ interface SideNavigationProps {
 const SideNav : React.FC<SideNavigationProps> = ({ tabs }) => {
 
   return (
-    <nav className="text-md font-normal w-[15vw] h-screen overflow-y-auto">
-    <h1 className="text-xl px-5 pt-2">Zion</h1>
+    <nav className="text-md font-normal w-[15vw]  overflow-y-auto">
       <div className="pt-6 flex flex-col">
         {tabs.map((tab) => (
             tab.subTabs ? 
