@@ -8,8 +8,8 @@ import Link from "next/link";
 const Nav = () => {
 
     return(
-        <div className="bg-[#232D3F] h-[60vh] select-none">
-        <nav className="flex items-start py-10 bg-[url('/university.jpg')] bg-cover px-20 text-[#fff] justify-between h-4/5">
+        <div className="bg-[#232D3F] select-none">
+        <nav className="flex items-start py-10 bg-[url('/university.jpg')] bg-cover px-20 text-[#fff] justify-between h-[50vh]">
             <Link href="/" className="text-2xl">SWIFT University</Link>
 
 
