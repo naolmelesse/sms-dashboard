@@ -20,8 +20,7 @@ export default function UserProfile(){
             <div className="flex items-center gap-1">
                 <FaUserCircle className="text-3xl"/>
                 <div className="flex flex-col items-start text-[0.9rem]">
-                    <p className="font-medium">Tesfaye</p>
-                    <p>Adminsitrator</p>
+                    <p className="font-medium">John Doe</p>
                 </div>
                 {menuOpen? <IoIosArrowUp/> : <IoIosArrowDown/>}
             </div>
@@ -29,7 +28,7 @@ export default function UserProfile(){
         <DropdownMenuContent>
             <DropdownMenuLabel>My Profile</DropdownMenuLabel>
             <DropdownMenuSeparator />
-            <DropdownMenuItem>Messages</DropdownMenuItem>
+            <DropdownMenuItem>Profile</DropdownMenuItem>
             <DropdownMenuItem>Settings</DropdownMenuItem>
             <DropdownMenuItem>Logout</DropdownMenuItem>
         </DropdownMenuContent>

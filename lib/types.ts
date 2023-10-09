@@ -5,3 +5,10 @@ export type TopStudent = {
     class: string
     year: number
   }
+
+export type ClassSession = {
+  subject: string,
+  time: string, 
+  teacher: string,
+  class_location: string,
+}
