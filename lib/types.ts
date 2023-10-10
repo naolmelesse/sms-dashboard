@@ -12,3 +12,11 @@ export type ClassSession = {
   teacher: string,
   class_location: string,
 }
+
+export type Exam = {
+  subject: string,
+  subject_code: string,
+  date: Date,
+  exam_location: string,
+  time: string
+}

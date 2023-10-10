@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Nav = () => {
     return(
-        <nav className=" flex items-start py-10 bg-[url('/university.jpg')] bg-cover px-2 lg:px-20 text-[#fff] justify-between h-[30vh] lg:h-[50vh]">
+        <nav className=" flex items-start py-10 bg-[url('/university.jpg')] bg-center bg-cover px-2 lg:px-20 text-[#fff] justify-between h-[30vh] lg:h-[50vh]">
             <Link href="/" className="text-2xl">SWIFT University</Link>
 
 

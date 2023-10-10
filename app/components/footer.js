@@ -1,0 +1,33 @@
+import { GrFacebook, GrTwitter, GrInstagram, GrLinkedin } from "react-icons/gr";
+
+import Link from "next/link";
+
+export default function Footer(){
+  return (
+    <footer className="bg-[#232D3F] text-[#fff]">
+      <div className="container mx-auto flex justify-between items-center py-10">
+        <div>
+          <h3 className="text-2xl font-semibold">SWIFT University</h3>
+          <p className="mt-2">Your path to success.</p>
+        </div>
+        <div className="flex gap-5 text-slate-200">
+          <Link href="">
+            <GrFacebook className="text-2xl" />
+          </Link>
+          <Link href="">
+            <GrTwitter className="text-2xl" />
+          </Link>
+          <Link href="">
+            <GrInstagram className="text-2xl" />
+          </Link>
+          <Link href="">
+            <GrLinkedin className="text-2xl" />
+          </Link>
+        </div>
+      </div>
+      <p className="text-center text-sm font-light">&copy; Copyright 2023. SWIFT University</p>
+    </footer>
+  );
+};
+
+
