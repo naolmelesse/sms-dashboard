@@ -35,19 +35,24 @@ export default function StudentInfoContainer(){
                 </table>
             </div>
             {/* Student's Attendance */}
-            <div className="border rounded-xl h-min hover:shadow hover:scale-105 transition duration-300 cursor-pointer overflow-hidden">
-                <div className="flex justify-center text-2xl lg:text-6xl bg-slate-100 py-5">
-                    <FcCalendar className=""/>
-                </div>
-                <div className="flex items-center justify-between px-5 py-7">
-                    <h3 className="text-lg md:text-xl font-medium">Your Attendance</h3>
-                    <p className="text-lg lg:text-2xl">89%</p>
+            <div>
+                <h2 className="text-2xl md:text-3xl py-1 px-2 lg:py-3 text-center lg:text-left mb-5">Attendance</h2>
+                <div className="border rounded-xl h-min hover:shadow hover:scale-105 transition duration-300 cursor-pointer overflow-hidden">
+                    <div className="flex justify-center text-2xl lg:text-6xl bg-slate-100 py-5">
+                        <FcCalendar className=""/>
+                    </div>
+                    <div className="flex items-center justify-between px-5 py-7">
+                        <h3 className="text-lg md:text-xl font-medium">Your Attendance</h3>
+                        <p className="text-lg lg:text-2xl">89%</p>
+                    </div>
                 </div>
             </div>
             {/* Student's Result */}
-            <div className="border rounded-xl p-5">
-                <h3 className="text-lg md:text-xl font-medium">Your Result</h3>
-                <BarChart options={StudentResultOptions} data={StudentResultData}/>
+            <div>
+                <h2 className="text-2xl md:text-3xl py-1 px-2 lg:py-3 text-center lg:text-left mb-5">Your Result</h2>
+                <div className="border rounded-xl p-5">
+                    <BarChart options={StudentResultOptions} data={StudentResultData}/>
+                </div>
             </div>
         </div>
     )
