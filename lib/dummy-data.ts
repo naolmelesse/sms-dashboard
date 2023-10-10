@@ -130,12 +130,19 @@ export const Classes : ClassSession[] = [
   export const StudentResultOptions = {
   responsive: true,
   scales: {
-        y: {
-          beginAtZero: true,
-          max: 4.0,
-        },
+    y: {
+      beginAtZero: true,
+      max: 4.0, // Adjust the maximum CGPA value (usually it's 4.0)
+      grid: {
+        // display: false, // Hide the y-axis grid lines
       },
-    
+    },
+    x: {
+      grid: {
+        display: false, // Hide the x-axis grid lines
+      },
+    },
+    },  
   };
   
   
