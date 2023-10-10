@@ -9,18 +9,18 @@ const Nav = () => {
 
     return(
         <div className="bg-[#232D3F] select-none">
-        <nav className="flex items-start py-10 bg-[url('/university.jpg')] bg-cover px-20 text-[#fff] justify-between h-[50vh]">
+        <nav className="flex items-start py-10 bg-[url('/university.jpg')] bg-cover px-2 lg:px-20 text-[#fff] justify-between h-[30vh] lg:h-[50vh]">
             <Link href="/" className="text-2xl">SWIFT University</Link>
 
 
-            <div className="flex items-center gap-10">
+            <div className="hidden flex-col lg:flex-row lg:flex items-center gap-10">
                 {/* <div className="flex items-center gap-5 border border-[#fff]">
                     <FiSearch className="text-[1.5rem]"/>
                     <input type="text" placeholder="Search..." className="py-1 outline-none bg-transparent placeholder:text-[#fff]" />
                 </div> */}
-            <FiMail className="text-2xl"/>
-            <BiBell className="text-2xl"/>
-            <UserProfile/>
+                <FiMail className="text-2xl"/>
+                <BiBell className="text-2xl"/>
+                <UserProfile/>
             </div>
         </nav>
         <StudentQuickTabs/>
