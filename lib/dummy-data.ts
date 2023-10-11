@@ -1,4 +1,4 @@
-import { TopStudent, ClassSession, Exam } from "./types";
+import { TopStudent, ClassSession, Exam, SemesterResult } from "./types";
 import { ColumnDef } from "@tanstack/react-table";
 
 export const TopStudents: TopStudent[] = [
@@ -217,3 +217,201 @@ export const ExamsTablecolumns: ColumnDef<Exam>[] = [
     header: "Exam Location",
   },
 ]
+
+// export const resultsTableHeaders = [
+// {  title: string,
+//   associated_data: string}
+// ]
+
+export const semesters_results : SemesterResult[] = [
+  { semester: "Semester 1",
+    results: {
+      mid1: {
+        exam_type: "MID I",
+        total_marks: 30,
+        grades: [
+          {
+            subject: "DNT",
+            subject_code: "01CS1001",
+            marks: 24,
+            is_absent: false,
+            before_assesment: null,
+            reassesment: null
+          },
+          {
+            subject: "Python",
+            subject_code: "01CS1003",
+            marks: 28,
+            is_absent: false,
+            before_assesment: null,
+            reassesment: null
+          },
+          {
+            subject: "DS",
+            subject_code: "01CS1010",
+            marks: 21,
+            is_absent: false,
+            before_assesment: null,
+            reassesment: null
+          },
+        ] 
+      },
+      mid2: {
+        exam_type: "MID II",
+        total_marks: 30,
+        grades: [
+          {
+            subject: "DNT",
+            subject_code: "01CS1001",
+            marks: 24,
+            is_absent: false,
+            before_assesment: null,
+            reassesment: null
+          },
+          {
+            subject: "Python",
+            subject_code: "01CS1003",
+            marks: 28,
+            is_absent: false,
+            before_assesment: null,
+            reassesment: null
+          },
+          {
+            subject: "DS",
+            subject_code: "01CS1010",
+            marks: 21,
+            is_absent: false,
+            before_assesment: null,
+            reassesment: null
+          },
+        ] 
+      },
+      final: {
+        exam_type: "FINAL",
+        total_marks: 50,
+        grades: [
+          {
+            subject: "CN",
+            subject_code: "01CS1001",
+            marks: 45,
+            is_absent: false,
+            before_assesment: null,
+            reassesment: null
+          },
+          {
+            subject: "Python",
+            subject_code: "01CS1003",
+            marks: 48,
+            is_absent: false,
+            before_assesment: null,
+            reassesment: null
+          },
+          {
+            subject: "DS",
+            subject_code: "01CS1010",
+            marks: 43,
+            is_absent: false,
+            before_assesment: null,
+            reassesment: null
+          },
+        ] 
+      },
+
+      }
+    },
+  { semester: "Semester 2",
+    results: {
+      mid1: {
+        exam_type: "MID I",
+        total_marks: 30,
+        grades: [
+          {
+            subject: "DNT",
+            subject_code: "01CS1001",
+            marks: 24,
+            is_absent: false,
+            before_assesment: null,
+            reassesment: null
+          },
+          {
+            subject: "Python",
+            subject_code: "01CS1003",
+            marks: 28,
+            is_absent: false,
+            before_assesment: null,
+            reassesment: null
+          },
+          {
+            subject: "DS",
+            subject_code: "01CS1010",
+            marks: 21,
+            is_absent: false,
+            before_assesment: null,
+            reassesment: null
+          },
+        ] 
+      },
+      mid2: {
+        exam_type: "MID II",
+        total_marks: 30,
+        grades: [
+          {
+            subject: "DNT",
+            subject_code: "01CS1001",
+            marks: 24,
+            is_absent: false,
+            before_assesment: null,
+            reassesment: null
+          },
+          {
+            subject: "Python",
+            subject_code: "01CS1003",
+            marks: 28,
+            is_absent: false,
+            before_assesment: null,
+            reassesment: null
+          },
+          {
+            subject: "DS",
+            subject_code: "01CS1010",
+            marks: 21,
+            is_absent: false,
+            before_assesment: null,
+            reassesment: null
+          },
+        ] 
+      },
+      final: {
+        exam_type: "FINAL",
+        total_marks: 50,
+        grades: [
+          {
+            subject: "CN",
+            subject_code: "01CS1001",
+            marks: 45,
+            is_absent: false,
+            before_assesment: null,
+            reassesment: null
+          },
+          {
+            subject: "Python",
+            subject_code: "01CS1003",
+            marks: 48,
+            is_absent: false,
+            before_assesment: null,
+            reassesment: null
+          },
+          {
+            subject: "DS",
+            subject_code: "01CS1010",
+            marks: 43,
+            is_absent: false,
+            before_assesment: null,
+            reassesment: null
+          },
+        ] 
+      },
+
+      }
+    },
+];

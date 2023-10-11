@@ -20,3 +20,49 @@ export type Exam = {
   exam_location: string,
   time: string
 }
+
+export type SemesterResult = {
+  semester: string,
+  results: {
+    mid1: {
+      exam_type: string,
+      total_marks: number,
+      grades:
+        {
+          subject: string,
+          subject_code: string,
+          marks: number,
+          is_absent: boolean,
+          before_assesment: null | number,
+          reassesment: null | number
+        }[], 
+    },
+    mid2: {
+      exam_type: string,
+      total_marks: number,
+      grades:
+        {
+          subject: string,
+          subject_code: string,
+          marks: number,
+          is_absent: boolean,
+          before_assesment: null | number,
+          reassesment: null | number
+        }[], 
+    },
+    final: {
+      exam_type: string,
+      total_marks: number,
+      grades:
+        {
+          subject: string,
+          subject_code: string,
+          marks: number,
+          is_absent: boolean,
+          before_assesment: null | number,
+          reassesment: null | number
+        }[], 
+    },
+
+  }
+}

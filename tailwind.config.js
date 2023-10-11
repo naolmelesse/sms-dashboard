@@ -31,6 +31,18 @@ module.exports = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
     },
+    // colors: {
+    //   transparent: 'transparent',
+    //   current: 'currentColor',
+    //   'white': '#ffffff',
+    //   'black': '#0F0F0F',
+    //   'dark-blue': '#232D3F',
+    //   'call-to-action': '#005B41',
+    //   'green': '#008170',
+    //   'soft-100': '#f1f5f9',
+    //   'soft-200': '#e2e8f0',
+    //   'dark-gray': '#1f2937'
+    // },
   },
   plugins: [require("tailwindcss-animate")],
 }

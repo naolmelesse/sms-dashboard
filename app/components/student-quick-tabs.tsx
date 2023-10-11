@@ -14,7 +14,7 @@ export default function StudentQuickTabs(){
                             <Link href="/upcoming-exam" className="hover:bg-[#005B41] transition duration-300 py-2 px-4 block">Up-coming Exam</Link>
                         </li>
                         <li>
-                            <Link href="" className="hover:bg-[#005B41] transition duration-300 py-2 px-4 block">Results</Link>
+                            <Link href="/results" className="hover:bg-[#005B41] transition duration-300 py-2 px-4 block">Results</Link>
                         </li>
                         <li>
                             <Link href="" className="hover:bg-[#005B41] transition duration-300 py-2 px-4 block">Examination Rules</Link>

@@ -15,8 +15,8 @@ export default function StudentInfoContainer(){
             {/* Time Table for today's classes */}
             <div className="border rounded-xl p-5">
                 <h3 className="text-lg md:text-xl font-medium py-2">Today's class</h3>
-                <table className="table-auto text-sm w-full divide-y-reverse divide-y-2 divide-slate-50 ">
-                    <tbody>
+                <table className="table-auto text-sm w-full divide-y-reverse ">
+                    <tbody className="divide-y divide-slate-50 ">
                     <tr className="text-left py-2">
                         <th className="p-2">Time</th>
                         <th className="p-2">Subject</th>
