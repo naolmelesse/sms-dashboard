@@ -2,7 +2,6 @@
 import { useState } from "react";
 import { SemesterResult } from "@/lib/types";
 import { IoIosArrowUp, IoIosArrowDown } from "react-icons/io";
-import Modal from "./modal";
 import StudentResultModal from "./student-result-modal";
 
 const ResultsAccordion: React.FC<SemesterResult> = ({ semester, results }) => {

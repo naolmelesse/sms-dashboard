@@ -59,7 +59,7 @@ export default function StudentQuickTabs(){
                     </ul>
                 </li>
             </ul>
-            <Link className="bg-[#005B41] p-2 transition duration-300" href="">More +</Link>
+            <Link className="bg-[#005B41] py-2 px-4 transition duration-300 rounded" href="">More +</Link>
         </div>
     )
 }

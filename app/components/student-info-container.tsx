@@ -13,19 +13,20 @@ export default function StudentInfoContainer(){
                 <p>School start</p>
             </div>
             {/* Time Table for today's classes */}
-            <div className="border rounded-xl p-5">
-                <h3 className="text-lg md:text-xl font-medium py-2">Today's class</h3>
+            <div className="">
+                <h3 className="text-2xl md:text-3xl py-1 px-2 lg:py-2 text-center lg:text-left mb-5">Today's class</h3>
+                <div className="border rounded-xl overflow-hidden hover:scale-105 transition duration-300">
                 <table className="table-auto text-sm w-full divide-y-reverse ">
-                    <tbody className="divide-y divide-slate-50 ">
-                    <tr className="text-left py-2">
-                        <th className="p-2">Time</th>
-                        <th className="p-2">Subject</th>
-                        <th className="p-2">Class</th>
-                        <th className="p-2 hidden lg:block">Teacher</th>
+                    <tbody className="divide-y-2 divide-[#fff] ">
+                    <tr className="text-left py-2 bg-[#232D3F] text-[#fff]">
+                        <th className="p-4">Time</th>
+                        <th className="p-4">Subject</th>
+                        <th className="p-4">Class</th>
+                        <th className="p-4 hidden lg:block">Teacher</th>
                     </tr>
                     
                     {Classes.map((item : ClassSession) => 
-                    <tr key={item.subject}>
+                    <tr key={item.subject} className="bg-slate-100 hover:bg-slate-200 transition duration-300">
                         <td className="p-2">{item.time}</td>
                         <td className="p-2">{item.subject}</td>
                         <td className="p-2">{item.class_location}</td>
@@ -33,6 +34,7 @@ export default function StudentInfoContainer(){
                     </tr>)}
                     </tbody>
                 </table>
+                </div>
             </div>
             {/* Student's Attendance */}
             <div>
