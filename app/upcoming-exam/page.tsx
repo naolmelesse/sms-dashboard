@@ -9,10 +9,10 @@ export default function UpcomingExam(){
             <div>
                 {/* <DataTable columns={ExamsTablecolumns} data={Exams}/>
                 <br /><br /> */}
-                <div className="rounded-xl border">
+                <div className="rounded-xl border overflow-hidden">
                     <table className="table-auto text-sm w-full">
-                        <tbody className="divide-y divide-slate-100">
-                            <tr className="text-left py-2">
+                        <tbody className="divide-y-2 divide-[#fff]">
+                            <tr className="text-left py-2 bg-[#232D3F] text-[#fff]">
                                 <th className="p-4">Subject Code</th>
                                 <th className="p-4">Subject</th>
                                 <th className="p-4">Time</th>
@@ -21,7 +21,7 @@ export default function UpcomingExam(){
                             </tr>
 
                             {Exams.map((item: Exam) =>
-                                <tr key={item.subject}>
+                                <tr key={item.subject} className="bg-slate-100 hover:bg-slate-200 transition duration-300">
                                     <td className="p-4">{item.subject_code}</td>
                                     <td className="p-4">{item.subject}</td>
                                     <td className="p-4">{item.time}</td>
