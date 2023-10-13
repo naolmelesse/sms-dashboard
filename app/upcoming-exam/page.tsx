@@ -1,9 +1,14 @@
 import { DataTable } from "../components/data-table";
 import { Exams, ExamsTablecolumns } from "@/lib/dummy-data";
 import { Exam } from "@/lib/types";
+import Nav from '../components/nav';
+import StudentQuickTabs from "../components/student-quick-tabs";
 
 export default function UpcomingExam(){
     return(
+        <>
+        <Nav/>
+        <StudentQuickTabs/>
         <div className="p-5 lg:px-20">
             <h2 className="text-lg lg:text-2xl py-5 text-center lg:text-left">Up-Coming Examination</h2>
             <div>
@@ -25,7 +30,7 @@ export default function UpcomingExam(){
                                     <td className="p-4">{item.subject_code}</td>
                                     <td className="p-4">{item.subject}</td>
                                     <td className="p-4">{item.time}</td>
-                                    <td className="p-4">{item.date.toISOString()}</td>
+                                    <td className="p-4">{item.date}</td>
                                     <td className="p-4">{item.exam_location}</td>
                                 </tr>)}
                         </tbody>
@@ -33,5 +38,6 @@ export default function UpcomingExam(){
                 </div>
             </div>
         </div>
+        </>
     )
 }

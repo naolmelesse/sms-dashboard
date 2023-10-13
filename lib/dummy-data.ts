@@ -167,28 +167,28 @@ export const Exams : Exam[] = [
   {
     subject: "DS",
     subject_code: "01CS1002",
-    date: new Date(),
+   date: getRandomDate(),
     exam_location: "BT102",
     time: "10:00AM to 11:30AM"
   },
   {
     subject: "CN",
     subject_code: "01CS1012",
-    date: new Date(),
+   date: getRandomDate(),
     exam_location: "BT102",
     time: "10:00AM to 11:30AM"
   },
   {
     subject: "OS",
     subject_code: "01CS1005",
-    date: new Date(),
+   date: getRandomDate(),
     exam_location: "BT102",
     time: "10:00AM to 11:30AM"
   },
   {
     subject: "DNT",
     subject_code: "01CS1001",
-    date: new Date(),
+   date: getRandomDate(),
     exam_location: "BT102",
     time: "10:00AM to 11:30AM"
   },
@@ -217,11 +217,6 @@ export const ExamsTablecolumns: ColumnDef<Exam>[] = [
     header: "Exam Location",
   },
 ]
-
-// export const resultsTableHeaders = [
-// {  title: string,
-//   associated_data: string}
-// ]
 
 export const semesters_results : SemesterResult[] = [
   { semester: "Semester 1",
@@ -415,3 +410,106 @@ export const semesters_results : SemesterResult[] = [
       }
     },
 ];
+
+export const timeTableTimings = [
+  "8:30AM to 9:30AM",
+  "10:00AM to 11:00AM",
+  "11:00AM to 12:30PM",
+  "12:30PM to 2:00PM",
+  "2:00PM to 3:30PM",
+  "3:30PM to 4:30PM"
+]
+
+export const timetableData = [
+  {
+    day: 'Monday',
+    subjects: [
+      { subject: 'WT', code: 'WT101', location: 'MB101' },
+      { subject: 'DS', code: 'SCI102', location: 'Lab A' },
+      { subject: 'PY', code: 'HIST201', location: 'MB203' },
+      { subject: 'Lunch', code: '', location: '' },
+      { subject: 'EN', code: 'ENG105', location: 'MA104' },
+      { subject: 'JAV', code: 'Jav205', location: 'MB304' },
+    ],
+  },
+  {
+    day: 'Tuesday',
+    subjects: [
+      { subject: 'CN', code: 'GEO101', location: 'MB201' },
+      { subject: 'CG', code: 'CG102', location: 'C201' },
+      { subject: 'WT', code: 'WT101', location: 'MB101' },
+      { subject: 'Lunch', code: '', location: '' },
+      { subject: 'DS', code: 'SCI102', location: 'MC301' },
+      { subject: 'JAV', code: 'Jav205', location: 'MB304' },
+    ],
+  },
+  {
+    day: 'Wednesday',
+    subjects: [
+      { subject: 'PE', code: 'PE101', location: 'GYM' },
+      { subject: 'WT', code: 'WT101', location: 'MA201' },
+      { subject: 'OS', code: 'OS103', location: 'B302' },
+      { subject: 'Lunch', code: '', location: '' },
+      { subject: 'CN', code: 'CN0201', location: 'C302' },
+      { subject: 'JAV', code: 'Jav205', location: 'MB304' },
+    ],
+  },
+  {
+    day: 'Thursday',
+    subjects: [
+      { subject: 'C', code: 'CO101', location: 'MB310' },
+      { subject: 'PY', code: 'HIST201', location: 'MB203' },
+      { subject: 'WT', code: 'WT101', location: 'MB101' },
+      { subject: 'Lunch', code: '', location: '' },
+      { subject: 'CAL', code: 'CL201', location: 'MA205' },
+      { subject: 'JAV', code: 'Jav205', location: 'MB304' },
+    ],
+  },
+  {
+    day: 'Friday',
+    subjects: [
+      { subject: 'EN', code: 'ENG105', location: 'MB104' },
+      { subject: 'WT', code: 'WT101', location: 'MB101' },
+      { subject: 'CS', code: 'CS101', location: 'MA205' },
+      { subject: 'Lunch', code: '', location: '' },
+      { subject: 'CN', code: 'CNO201', location: 'C302' },
+      { subject: 'JAV', code: 'Jav205', location: 'MB304' },
+    ],
+  },
+];
+
+function getRandomDate() {
+  const startDate = new Date(); // Today's date
+  const endDate = new Date();
+  endDate.setMonth(endDate.getMonth() + 2); // Notices for the next 2 months
+
+  const randomDate = new Date(
+    startDate.getTime() + Math.random() * (endDate.getTime() - startDate.getTime())
+  );
+
+  return randomDate.toDateString();
+}
+
+export const notices = [
+  {
+    title: 'Important Announcement',
+    date: getRandomDate(),
+  },
+  {
+    title: 'Upcoming Event',
+    date: getRandomDate(),
+  },
+  {
+    title: 'Holiday Notice',
+    date: getRandomDate(),
+  },
+  {
+    title: 'Exam Schedule Change',
+    date: getRandomDate(),
+  },
+  {
+    title: 'Registration Deadline',
+    date: getRandomDate(),
+  },
+];
+

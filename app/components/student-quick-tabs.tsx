@@ -30,7 +30,7 @@ export default function StudentQuickTabs(){
                 <Link className="hover:bg-[#005B41] py-2 px-3 transition duration-300" href="">Time Table</Link>
                 <ul className="hidden absolute top-full left-0 bg-gray-800 w-max group-hover:block">
                     <li>
-                        <Link href="" className="hover:bg-[#005B41] transition duration-300 py-2 px-4 block">Current Week Time-Table</Link>
+                        <Link href="/time-table" className="hover:bg-[#005B41] transition duration-300 py-2 px-4 block">Current Week Time-Table</Link>
                     </li>
                     <li>
                         <Link href="" className="hover:bg-[#005B41] transition duration-300 py-2 px-4 block">Date-wise Time-Table</Link>

@@ -16,7 +16,7 @@ export type ClassSession = {
 export type Exam = {
   subject: string,
   subject_code: string,
-  date: Date,
+  date: string,
   exam_location: string,
   time: string
 }

@@ -9,7 +9,7 @@ import { TopStudents, columns, options, data } from "@/lib/dummy-data";
 const AdminDashboard = () => {
 
     return(
-        <div className=" px-10 py-5 bg-slate-100 min-h-4/5 overflow-y-auto">
+        <div className=" px-10 py-5 bg-slate-50 min-h-4/5 overflow-y-auto">
             <h1 className="text-2xl font-medium">Welcome Mr.X</h1>
             {/* admin data cards container */}
             <div className="grid grid-cols-4 gap-5 py-5">
