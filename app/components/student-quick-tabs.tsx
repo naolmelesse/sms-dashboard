@@ -38,7 +38,7 @@ export default function StudentQuickTabs(){
                 </ul>
                 </li>
             </ul>
-            <Link className="hover:bg-[#005B41] py-2 px-3 transition duration-300" href="">E-content</Link>
+            <Link className="hover:bg-[#005B41] py-2 px-3 transition duration-300" href="/e-content">E-content</Link>
             <Link className="hover:bg-[#005B41] py-2 px-3 transition duration-300" href="">Fees</Link>
             <ul>
                 <li className="relative group">

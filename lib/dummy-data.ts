@@ -490,6 +490,8 @@ function getRandomDate() {
   return randomDate.toDateString();
 }
 
+export const EContent_Category = [ "Assignments", "Notes", "Question Bank", "Syllabus", "Ebook", "Lecture Note/PPTs" ];
+
 export const notices = [
   {
     title: 'Important Announcement',
@@ -510,6 +512,27 @@ export const notices = [
   {
     title: 'Registration Deadline',
     date: getRandomDate(),
+  },
+];
+
+export const econtent_subjects = [
+  {
+    id: 'AWT',
+    name: 'AWT',
+    content: 'Download E-Content for AWT',
+    file: 'subject1-content.pdf',
+  },
+  {
+    id: 'DBMS',
+    name: 'DBMS',
+    content: 'Download E-Content for DBMS',
+    file: 'subject2-content.pdf',
+  },
+  {
+    id: 'PY',
+    name: 'PY',
+    content: 'Download E-Content for PY',
+    file: 'subject3-content.pdf',
   },
 ];
 
