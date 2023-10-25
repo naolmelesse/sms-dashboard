@@ -1,6 +1,5 @@
-import { GrFacebook, GrTwitter, GrInstagram, GrLinkedin } from "react-icons/gr";
-import { FiFacebook, FiTwitter, FiInstagram, FiLinkedin, FiYoutube } from "react-icons/fi";
-
+import { FiFacebook, FiInstagram, FiLinkedin, FiYoutube } from "react-icons/fi";
+import { FaXTwitter } from "react-icons/fa6";
 import Link from "next/link";
 
 export default function Footer(){
@@ -13,19 +12,19 @@ export default function Footer(){
         </div>
         <div className="flex gap-5 text-[#fff]">
           <Link href="">
-            <FiFacebook className="text-2xl hover:text-[#005B41] transition duration-300" />
+            <FaXTwitter className="text-2xl hover:text-[#005B41] transition duration-300" />
           </Link>
           <Link href="">
-            <FiTwitter className="text-2xl hover:text-[#005B41] transition duration-300" />
+            <FiLinkedin className="text-2xl hover:text-[#005B41] transition duration-300" />
           </Link>
           <Link href="">
             <FiInstagram className="text-2xl hover:text-[#005B41] transition duration-300" />
           </Link>
           <Link href="">
-            <FiYoutube className="text-2xl hover:text-[#005B41] transition duration-300" />
+            <FiFacebook className="text-2xl hover:text-[#005B41] transition duration-300" />
           </Link>
           <Link href="">
-            <FiLinkedin className="text-2xl hover:text-[#005B41] transition duration-300" />
+            <FiYoutube className="text-2xl hover:text-[#005B41] transition duration-300" />
           </Link>
         </div>
       </div>
