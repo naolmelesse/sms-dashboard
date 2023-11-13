@@ -12,5 +12,6 @@ export const shortenCourseName = (name : string) => {
 
 export const isTodaysClass = (date : string) => {
     const today = new Date().getDay();
-    return new Date(date).getDay() === today ? true : false;
+    const schedule_date = new Date(date).getDay();
+    return schedule_date === today ? true : false;
 }

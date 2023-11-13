@@ -23,8 +23,8 @@ const DailyTimeTable = () => {
                         <td className="p-2">{subject.room}</td>
                         <td className="p-2 hidden lg:block">{subject.instructor_name}</td>
                     </tr>
-                )
-                }
+                )}
+                
                 {/* {Classes.map((item : ClassSession) => 
                 <tr key={item.subject} className="bg-slate-100 hover:bg-slate-200 transition duration-300">
                     <td className="p-2">{item.time}</td>
