@@ -1,4 +1,4 @@
-import SideNav from '../components/side-nav';
+import SideNav from '../components/dashboard-side-nav';
 import {tabs} from "@/lib/side-nav-tab-items";
 import AdminDashboard from '../components/admin-dashboard';
 

@@ -2,6 +2,7 @@ import { FiSearch, FiMail } from "react-icons/fi";
 import { BiBell } from "react-icons/bi";
 import UserProfile from "./user-profile";
 import Link from "next/link";
+import SideMenu from "./side-menu";
 
 const Nav = () => {
     return(
@@ -16,6 +17,7 @@ const Nav = () => {
                     </div> */}
                     <FiMail className="hidden lg:inline text-2xl hover:text-[#005B41] cursor-pointer transition duration-300"/>
                     <BiBell className="hidden lg:inline text-2xl hover:text-[#005B41] cursor-pointer transition duration-300"/>
+                    <SideMenu/>
                     <UserProfile/>
                 </div>
         </nav>
