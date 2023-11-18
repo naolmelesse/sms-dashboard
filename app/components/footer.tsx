@@ -5,8 +5,8 @@ import Link from "next/link";
 export default function Footer(){
   return (
     <footer className="bg-[#232D3F] text-[#fff]">
-      <div className="container mx-auto flex justify-between items-center py-10">
-        <div>
+      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center py-10">
+        <div className="text-center my-5 md:my-auto">
           <h3 className="text-2xl font-semibold">SWIFT University</h3>
           <p className="mt-2">Your path to success.</p>
         </div>
@@ -28,7 +28,7 @@ export default function Footer(){
           </Link>
         </div>
       </div>
-      <p className="text-center text-sm font-light">&copy; Copyright 2023. SWIFT University</p>
+      <p className="text-center text-sm font-light py-2">&copy; Copyright 2023. SWIFT University</p>
     </footer>
   );
 };
