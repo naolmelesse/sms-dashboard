@@ -6,7 +6,7 @@ export default function Footer(){
   return (
     <footer className="bg-[#232D3F] text-[#fff]">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center py-10">
-        <div className="text-center my-5 md:my-auto">
+        <div className="text-center my-5 md:my-auto ">
           <h3 className="text-2xl font-semibold">SWIFT University</h3>
           <p className="mt-2">Your path to success.</p>
         </div>
