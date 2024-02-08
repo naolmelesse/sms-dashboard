@@ -4,7 +4,7 @@ import { econtent_subjects, EContent_Category } from '@/lib/dummy-data';
 
 const EContentTabs: React.FC = () => {
   const [activeSubject, setActiveSubject] = useState(econtent_subjects[0].id);
-  const [activeCategory, setActiveCategory] = useState(EContent_Category[0]);
+  const [activeCategory, setActiveCategory] = useState(EContent_Category[0])
 
   return (
     <div className="container py-10">

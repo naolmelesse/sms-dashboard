@@ -66,3 +66,11 @@ export type SemesterResult = {
 
   }
 }
+
+export type Result = {
+  academic_term: string,
+  course: string,
+  grading_scale: string, 
+  maximum_score: number,
+  total_score: number
+}[]
